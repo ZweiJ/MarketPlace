@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'components/body.dart';
 
 class SignInScreen extends StatelessWidget {
   static String routeName = "/signin";
@@ -7,7 +8,10 @@ class SignInScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("Sign In"),
+      ),
+      body: Body(),
     );
   }
 }
