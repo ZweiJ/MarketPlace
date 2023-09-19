@@ -25,9 +25,9 @@ class _SignFormState extends State<SignForm> {
       child: Column(
         children: [
           buildEmailFormField(),
-          SizedBox(height: getProportionateScreenWidht(30)),
+          SizedBox(height: getProportionateScreenWidht(20)),
           buildPasswordFormField(),
-          SizedBox(height: getProportionateScreenWidht(30)),
+          SizedBox(height: getProportionateScreenWidht(20)),
           Row(
             children: [
               Checkbox(
