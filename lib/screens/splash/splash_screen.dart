@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
   static String routeName = "/splash";
+
+  SplashScreen(String s);
   @override
   Widget build(BuildContext context) {
     // you have to call it on your starting screen
