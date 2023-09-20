@@ -1,6 +1,4 @@
 import 'package:ecommerce/components/no_account_text.dart';
-import 'package:ecommerce/constants.dart';
-import 'package:ecommerce/screens/forgot_password/forgot_password_screen.dart';
 import 'package:ecommerce/screens/sign_in/components/sign_form.dart';
 import 'package:ecommerce/size_config.dart';
 import 'package:flutter/material.dart';

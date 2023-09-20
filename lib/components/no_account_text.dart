@@ -1,4 +1,3 @@
-import 'package:ecommerce/screens/forgot_password/forgot_password_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../constants.dart';
