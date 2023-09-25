@@ -1,17 +1,18 @@
-# ecommerce
+MarketPlace Kelompok 3
 
-A new Flutter project.
+535239101 - Abraham Julian
+535220061 - Vicky Januarta
+535220145 - Dimas Saputra
+535220200 - Chalvinth Breynth Brilliantfricco
+535220250 - Kimberly
+535220197 - Rudi hartarto
 
-## Getting Started
+Fitur Fitur yang ada di dalam MarketPlace 
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# MarketPlace
+1.on board screen
+2.login screen
+3.sign up screen
+4.home screen
+5.details screen
+6.cart screen
+7.profile screen
