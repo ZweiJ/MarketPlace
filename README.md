@@ -7,7 +7,7 @@ MarketPlace Kelompok 3
 535220250 - Kimberly
 535220197 - Rudi hartarto
 
-Fitur Fitur yang ada di dalam MarketPlace 
+Fitur Fitur yang ada di dalam MarketPlace :
 
 1.on board screen
 2.login screen
@@ -16,3 +16,5 @@ Fitur Fitur yang ada di dalam MarketPlace
 5.details screen
 6.cart screen
 7.profile screen
+
+
