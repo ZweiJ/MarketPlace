@@ -1,4 +1,5 @@
 import 'package:ecommerce/models/product.dart';
+import 'package:ecommerce/size_config.dart';
 import 'package:flutter/material.dart';
 
 class DetailsScreen extends StatelessWidget {
@@ -7,7 +8,14 @@ class DetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        leading: SizedBox(
+          height: getProportionateScreenWidht(40),
+          width: getProportionateScreenWidht(40),
+        ),
+      ),
+    );
   }
 }
 
