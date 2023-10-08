@@ -13,8 +13,8 @@ class SpecialOffer extends StatelessWidget {
     return Column(  
       children: [
         SectionTitle(
-          text: "Special for you",
-          press: () {},
+          title: "Special for you",
+          press: () {}, 
         ),
         SizedBox(height: getProportionateScreenWidht(20)),
         SingleChildScrollView(
