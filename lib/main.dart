@@ -2,7 +2,7 @@ import 'package:ecommerce/routes.dart';
 import 'package:ecommerce/screens/splash/splash_screen.dart';
 import 'package:ecommerce/theme.dart';
 import 'package:flutter/material.dart';
-//just testing
+
 
 void main() {
   runApp(const MyApp());
