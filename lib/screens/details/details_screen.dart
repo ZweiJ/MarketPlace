@@ -4,26 +4,21 @@ import 'package:flutter/material.dart';
 
 class DetailsScreen extends StatelessWidget {
   static String routeName = "/details";
-  const DetailsScreen(String s, {super.key});
 
   @override
   Widget build(BuildContext context) {
+    final ProductDetailsArguments agrs =
+        ModalRoute.of(context).settings.arguments;
     return Scaffold(
-      appBar: AppBar(
-        leading: SizedBox(
-          height: getProportionateScreenWidht(40),
-          width: getProportionateScreenWidht(40),
-        ),
-      ),
+      backgroundColor: Color(0xFFF5F6F9),
+      appBar: CustomAppBar(rating: agrs.product.rating),
+      body: Body(product: agrs.product),
     );
   }
 }
 
-// we also need to pass our product to details screen
-// And we use name route so we need to create a arguments class
-
 class ProductDetailsArguments {
   final Product product;
 
-  ProductDetailsArguments({required this.product});
+  ProductDetailsArguments({@required this.product});
 }
