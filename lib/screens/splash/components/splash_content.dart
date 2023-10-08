@@ -16,7 +16,7 @@ class SplashContent extends StatelessWidget {
       children: <Widget>[
         Spacer(),
         Text(
-          "TOKO",
+          "Koko Polos",
           style: TextStyle(
             fontSize: getProportionateScreenWidht(36),
             color: kPrimaryColor,
@@ -24,9 +24,9 @@ class SplashContent extends StatelessWidget {
           ),
         ),
         Text(
-          text, 
+          text,
           textAlign: TextAlign.center,
-          ),
+        ),
         Spacer(
           flex: 2,
         ),
