@@ -1,6 +1,6 @@
 import 'dart:js';
 
-import 'package:ecommerce/Profile/Profile_screen.dart';
+import 'package:ecommerce/screens/Profile/Profile_screen.dart';
 import 'package:ecommerce/screens/cart/cart_screen.dart';
 import 'package:ecommerce/screens/complete_profile/complete_profile_screen.dart';
 import 'package:ecommerce/screens/details/details_screen.dart';
