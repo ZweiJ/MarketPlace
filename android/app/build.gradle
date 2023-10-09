@@ -4,28 +4,28 @@ plugins {
     id "dev.flutter.flutter-gradle-plugin"
 }
 
-def localProperties = new Properties()
-def localPropertiesFile = rootProject.file('local.properties')
-if (localPropertiesFile.exists()) {
-    localPropertiesFile.withReader('UTF-8') { reader ->
-        localProperties.load(reader)
+def localProperties = new Properties()//deklarasi variabel
+def localPropertiesFile = rootProject.file('local.properties')// mengambil file "local.properties" yang terletak di direktori proyek akar (root project) dan menyimpannya dalam variabel 
+if (localPropertiesFile.exists()) { //pemeriksaan apakah file dengan nama yang disimpan dalam variabel localPropertiesFile ada atau tidak
+    localPropertiesFile.withReader('UTF-8') { reader ->// membuka file localPropertiesFile untuk dibaca dengan encoding UTF-8
+        localProperties.load(reader) //membaca isi file dan memuatnya ke dalam objek localProperties
     }
 }
 
-def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
-if (flutterVersionCode == null) {
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')//deklarasi variabel flutterVersionCode
+if (flutterVersionCode == null) { //mengecek apakah flutterVersionCode memiliki nilai atau null (tidak ada nilai)
     flutterVersionCode = '1'
 }
 
-def flutterVersionName = localProperties.getProperty('flutter.versionName')
+def flutterVersionName = localProperties.getProperty('flutter.versionName')//deklarasi variabel flutterVersionName
 if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
 android {
-    namespace "com.example.ecommerce"
-    compileSdkVersion flutter.compileSdkVersion
-    ndkVersion flutter.ndkVersion
+    namespace "com.example.ecommerce"//digunakan untuk proyek Flutter saat diintegrasikan dengan platform Android
+    compileSdkVersion flutter.compileSdkVersion//variabel yang digunakan untuk mengambil nilai versi SDK Android yang akan digunakan 
+    ndkVersion flutter.ndkVersion//variabel yang digunakan untuk mengambil nilai versi NDK (Native Development Kit) yang akan digunakan
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8

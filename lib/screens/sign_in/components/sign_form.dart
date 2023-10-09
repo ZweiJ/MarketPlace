@@ -7,8 +7,8 @@ import 'package:ecommerce/screens/login_succes/login_succsess_screen.dart';
 import 'package:ecommerce/size_config.dart';
 import 'package:flutter/material.dart';
 
-class SignForm extends StatefulWidget {
-  const SignForm({super.key});
+class SignForm extends StatefulWidget { //deklarasi kelas SignForm
+  const SignForm({super.key}); //konstruktor dari kelas SignForm
 
   @override
   State<SignForm> createState() => _SignFormState();
@@ -16,9 +16,9 @@ class SignForm extends StatefulWidget {
 
 class _SignFormState extends State<SignForm> {
   final _formkey = GlobalKey<FormState>();
-  String? email;
-  String? password;
-  bool? remember = false;
+  String? email;//digunakan untuk menyimpan nilai inputan pengguna untuk email.
+  String? password;//digunakan untuk menyimpan nilai inputan pengguna untuk password.
+  bool? remember = false; //Variabel ini digunakan untuk menyimpan nilai inputan pengguna
   final List<String> errors = [];
 
   void addError({required String error}) {
@@ -47,7 +47,7 @@ class _SignFormState extends State<SignForm> {
           SizedBox(height: getProportionateScreenWidht(20)),
           Row(
             children: [
-              Checkbox(
+              Checkbox( //membuat kotak centang yang memungkinkan pengguna untuk mengaktifkan atau menonaktifkan opsi "Remember Me".
                 value: remember,
                 activeColor: kPrimaryColor,
                 onChanged: (value) {
@@ -56,19 +56,19 @@ class _SignFormState extends State<SignForm> {
                   });
                 },
               ),
-              Text("Remember Me"),
-              Spacer(),
-              GestureDetector(
+              Text("Remember Me"), // digunakan di sebelah kotak centang (checkbox) yang memungkinkan pengguna untuk mengingat login mereka
+              Spacer(), // spacer digunakan untuk memberikan jarak antara teks "Remember Me" dan teks "Forgot Password"
+              GestureDetector( //mendeteksi ketika pengguna mengetuk teks "Forgot Password
                 onTap: () => Navigator.pushNamed(
                     context, ForgotPasswordScreen.routeName),
                 child: Text(
                   "Forgot Password",
-                  style: TextStyle(decoration: TextDecoration.underline),
+                  style: TextStyle(decoration: TextDecoration.underline),//teks "Forgot Password" yang memiliki efek garis bawah (underline) dan akan mengarahkan pengguna ke layar yang sesuai ketika mereka mengetuknya
                 ),
               )
             ],
           ),
-          FormError(errors: errors),
+          FormError(errors: errors), //widget kustom yang digunakan untuk menampilkan pesan kesalahan jika ada kesalahan validasi pada formulir. 
           SizedBox(height: getProportionateScreenWidht(20)),
           DefaultButton(
             text: "Continue",
