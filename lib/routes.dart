@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:ecommerce/screens/Profile/Profile_screen.dart';
 import 'package:ecommerce/screens/cart/cart_screen.dart';
 import 'package:ecommerce/screens/complete_profile/complete_profile_screen.dart';
@@ -26,7 +24,7 @@ final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
   HomeScreen.routeName: (context) => HomeScreen('/home'),
   DetailsScreen.routeName: (context) => DetailsScreen('/details'),
   CartScreen.routeName: (context) => CartScreen('/cart'),
-  ProfileScreen.routeName: (context) => ProfileScreen(),
+  ProfileScreen.routeName: (context) => ProfileScreen('/profile'),
 };
 
 
