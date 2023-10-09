@@ -1,5 +1,8 @@
-import 'package:ecommerce/screens/details/components/body.dart';
 import 'package:flutter/material.dart';
+
+import '../../Profile/components/body.dart';
+
+
 
 class ProfileScreen extends StatelessWidget {
   static String routeName = '/profile';
