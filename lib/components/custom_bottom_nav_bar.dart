@@ -6,6 +6,7 @@ import '../enums.dart';
 import '../screens/Profile/Profile_screen.dart';
 import '../screens/home/home_screen.dart';
 
+//CustomBottomNavBar.untuk menampilkan bottom navigation bar
 class CustomBottomNavBar extends StatelessWidget {
   const CustomBottomNavBar({
     Key? key,
@@ -13,7 +14,7 @@ class CustomBottomNavBar extends StatelessWidget {
   }) : super(key: key);
 
   final MenuState selectedMenu;
-
+//untuk menampilkan tampilan navigation bar
   @override
   Widget build(BuildContext context) {
     final Color inActiveIconColor = Color(0xFFB6B6B6);
